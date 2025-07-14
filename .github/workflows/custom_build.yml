@@ -1,6 +1,8 @@
 name: Custom Build (for testing purpose)
 run-name: WSA ${{ inputs.release_type }} ${{ inputs.arch }} with ${{ inputs.root_sol }} and ${{ inputs.gapps_brand }}
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
     inputs:
       arch:
